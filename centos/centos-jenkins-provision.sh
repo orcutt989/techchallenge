@@ -64,7 +64,7 @@ fi
 # This may not be helpful if machine is already provisoined and has advanced network config
 if [ -z "$(hostname -I | awk '{print $2}')" ]
 then
-    IPADDR="$(hostname -I)"
+    IPADDR="$(hostname -I | awk '{print $1}')"
 else
     IPADDR="$(hostname -I | awk '{print $2}')"
 fi
