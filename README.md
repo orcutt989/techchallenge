@@ -29,7 +29,7 @@ By Jimmy Orcutt for `Puppet`
     * Google, StackExchange, ServerFault, and random posts on forums about random Linux commands and switches I could not remember off the top of my head.
 
 4. Briefly explain what automation means to you, and why it is important to an organization's infrastructure design strategy.
-    * Automation frees up staff to spend time on other value-adding activities that only humans are capable of rather than updating/configuring servers, installing programs and many other tasks.  Not only does automation itself save time (therefore money), but also allows staff to spend time on solutions, new product ideas, features, and anything else that humans are good at.
+    * Automation frees up staff to spend time on other value-adding activities that only humans are capable of rather than updating/configuring servers, installing programs and many other tasks.  Not only does automation itself save time (therefore money), but also allows staff to spend time on solutions, new product ideas, features, and anything else that humans are good at.  Automation also alows for great disaster recovery options. If an infrastructure goes down in part or entirety and can be fired up without manual intervention downtime can be severely minimized.
 
 ## Compatibility 
 `centos-jenkins-provision.sh` is compatible with the following Operating Systems out of the box -
