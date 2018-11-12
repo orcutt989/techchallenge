@@ -10,12 +10,12 @@
 # command line arguments
 while [ $# -gt 0 ]
 do
-    case "$1" in
-        -update) update=on;;
-        -fw)  fw=on;;
-        -skipwiz)  skipwiz=on;;
-        esac
-        shift
+  case "$1" in
+    -update)   update=on;;
+    -fw)       fw=on;;
+    -skipwiz)  skipwiz=on;;
+  esac
+  shift
 done
 
 # Optional only enable this if you want your machine updated
