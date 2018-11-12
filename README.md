@@ -17,7 +17,7 @@ By Jimmy Orcutt for `Puppet`
 ## Technical Challenge Questions
 
 1. *Describe the most difficult hurdle you had to overcome in implementing your solution.*
-    * The biggest hurdle I encoutered was figuring out that Vagrant reserves eth0 for NAT and this wasn't the IP Jenkins was being served from. It took me a bit to figure out that I needed to add an interface.
+    * The biggest hurdle I encountered was figuring out that Vagrant reserves eth0 for NAT and this wasn't the IP Jenkins was being served from. It took me a bit to figure out that I needed to add an interface.
 
 2. *Please explain why requirement (d) above is important.*
     ```
@@ -26,10 +26,10 @@ By Jimmy Orcutt for `Puppet`
     * If an automated solution causes failures and repeats redundant configuration tasks then it defeats the purpose of automating a manual process.  Automation should remove human-error, save time, and streamline a process.
 
 3. *Where did you go to find information to help you?*
-    * Google, StackExchange, ServerFault, and random posts on forums about random Linux commands and switches I couldnt remember off the top of my head.
+    * Google, StackExchange, ServerFault, and random posts on forums about random Linux commands and switches I could not remember off the top of my head.
 
 4. Briefly explain what automation means to you, and why it is important to an organization's infrastructure design strategy.
-    * 
+    * Automation frees up staff to spend time on other value-adding activities that only humans are capable of rather than updating/configuring servers, installing programs and many other tasks.  Not only does automation itself save time (therefore money), but also allows staff to spend time on solutions, new product ideas, features, and anything else that humans are good at.
 
 ## Compatibility 
 `centos-jenkins-provision.sh` is compatible with the following Operating Systems out of the box -
@@ -39,7 +39,7 @@ By Jimmy Orcutt for `Puppet`
 
 
 ## Description
-`centos7-jenkins.sh` will perform the following out of the box -
+`centos-jenkins-provision.sh` will perform the following out of the box -
 
 1. Check if Jenkins is installed.
 2. Install `Java 1.8`
@@ -52,7 +52,7 @@ By Jimmy Orcutt for `Puppet`
 Use this script with your favorite configuration management platform, as a `Vagrant` provisioning script, or run it on an already standing server.  See [Arguments](#Arguments) for additional options.
 
 * Vagrant
-    1. Drop the script into your Vagrant folder and make sure ` config.vm.provision :shell, path: "centos/centos-jenkins-provision.sh"` is set.  Otherwise you can copy the contents into your exisitng provisioning script.
+    1. Drop the script into your Vagrant folder and make sure ` config.vm.provision :shell, path: "centos/centos-jenkins-provision.sh"` is set.  Otherwise you can copy the contents into your existing provisioning script.
 * Existing system
     1. Copy the script to your system.
     2. Give execution permission with `chmod a+x centos-jenkins-provision.sh`
